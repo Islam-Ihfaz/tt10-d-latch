@@ -19,7 +19,7 @@ module tt_um_islam_ihfaz_d_latch (
     wire d = ui_in[0];
     wire e = ui_in[1];
 
-    reg q;
+    wire q;
 
     always @(*) 
         begin
