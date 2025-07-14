@@ -21,7 +21,7 @@ module tt_um_islam_ihfaz_d_latch (
 
     reg q;
 
-    always @ (e or d) 
+    always @(*) 
         begin
             if (e) q = d; //Same as: if (control = 1)
         end
