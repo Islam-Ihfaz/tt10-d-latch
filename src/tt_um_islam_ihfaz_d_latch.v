@@ -25,6 +25,8 @@ module tt_um_islam_ihfaz_d_latch (
         begin
             if (e) 
                 q = d; //Same as: if (control = 1)
+            else
+                q = q; // optional, but makes the latch retention clearer to readers
         end
 
     // All output pins must be assigned. If not used, assign to 0.
